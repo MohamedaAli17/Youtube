@@ -19,6 +19,8 @@ body {
     padding: 15px;
 }
 
+
+
 .left {
     display: flex;
     align-items: center;
@@ -208,4 +210,38 @@ span {
     .search {
         display: none;
     }
+}
+
+/* Light mode styles (default) */
+body {
+    background-color: #fff;
+    color: #000;
+    /* Define other light mode styles */
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #181818;
+    color: #fff;
+    /* Define other dark mode styles, for example: */
+}
+
+.dark-mode .header,
+.dark-mode .side-bar,
+.dark-mode .content,
+.dark-mode .video {
+    background-color: #202020; /* Dark background for elements */
+}
+
+.dark-mode .title h3,
+.dark-mode .title a,
+.dark-mode .title span {
+    color: #fff; /* White text for titles, links, and spans */
+}
+
+
+
+body.dark-mode .nav-link.active {
+    background-color: #303030; /* Darker background for the active nav-link */
+    color: #ffffff; /* White text color for the active nav-link */
 }
